@@ -8,14 +8,22 @@
 </head>
 
 <body>
-    New User:
+
     <form action="/registration" method="POST">
+
         <input type="text" name="username" placeholder="username">
         <input type="password" name="password" placeholder="password">
         <input type="text" name="email" placeholder="email">
-        <input type="submit" value="Submit">
 
+
+        <input type="submit" value="submit">
     </form>
+
+
+    <div id='error' style="visibility:<%= error %>; color:red;font-size:20px">
+        duplicate entry
+    </div>
+
 </body>
 
 </html>
